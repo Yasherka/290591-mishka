@@ -1,6 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Kristina Meshcheryakova](https://up.htmlacademy.ru/adaptive/12/user/290591).
+* Студент: [Kristina_ Meshcheryakova](https://up.htmlacademy.ru/adaptive/12/user/290591).
 * Наставник: [Max Pushkarev](https://up.htmlacademy.ru/adaptive/12/user/87167).
 
 ---
