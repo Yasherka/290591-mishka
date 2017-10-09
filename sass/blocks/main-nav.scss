@@ -1,0 +1,10 @@
+.main-nav {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.main-nav__list {
+  @include list-reset;
+}

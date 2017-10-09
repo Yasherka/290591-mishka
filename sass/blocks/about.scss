@@ -1,0 +1,19 @@
+.about {
+  margin-bottom: 60px;
+}
+
+.about__list {
+  @include list-reset;
+}
+
+.about__title {
+  @include block-title;
+}
+
+.about__item {
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}

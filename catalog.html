@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -32,51 +33,55 @@
       <h1 class="page-main__title">Каталог товаров</h1>
 
       <section class="catalog">
-        <h2 class="visually-hidden">Каталог</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item product">
-            <a class="product__link" href="#">
-              <img src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Зайчик-попрыгайчик</h3>
-            </a>
-            <p class="product__info">Рост 30 см, вес 200 г</p>
-            <p class="product__price">1200 руб.</p>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__link" href="#">
-              <img src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Корзинка для белья</h3>
-            </a>
-            <p class="product__info">Диаметр 15 см, высота 10 см</p>
-            <p class="product__price">690 руб.</p>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__link" href="#">
-              <img src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
-            </a>
-            <a class="product__link" href="#">
-              <h3 class="product__title">Большая корзинка для игрушек</h3>
-            </a>
-            <p class="product__info">Диаметр 30 см, высота 30 см</p>
-            <p class="product__price">1500 руб.</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="visually-hidden">Каталог</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item product">
+              <a class="product__link" href="#">
+                <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              </a>
+              <a class="product__link" href="#">
+                <h3 class="product__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="product__info">Рост 30 см, вес 200 г</p>
+              <p class="product__price">1200 руб.</p>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__link" href="#">
+                <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+              </a>
+              <a class="product__link" href="#">
+                <h3 class="product__title">Корзинка для белья</h3>
+              </a>
+              <p class="product__info">Диаметр 15 см, высота 10 см</p>
+              <p class="product__price">690 руб.</p>
+            </li>
+            <li class="catalog__item product">
+              <a class="product__link" href="#">
+                <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+              </a>
+              <a class="product__link" href="#">
+                <h3 class="product__title">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="product__info">Диаметр 30 см, высота 30 см</p>
+              <p class="product__price">1500 руб.</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="process">
-        <h2 class="pocess__title">Процесс производства</h2>
-        <video class="pocess__video"
-          preload="metadata"
-          width="260" height="150"
-          poster="http://placehold.it/260x150">
-          <source src="#" type="video/mp4">
-        </video>
-        <p class="process__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="btn" href="form.html">Сделать заказ</a>
+        <div class="container">
+          <h2 class="process__title">Процесс производства</h2>
+          <video class="process__video"
+            preload="metadata"
+            width="260" height="150"
+            poster="img/video-mobile@1x.jpg">
+            <source src="#" type="video/mp4">
+          </video>
+          <p class="process__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="btn" href="form.html">Сделать заказ</a>
+        </div>
       </section>
     </main>
 

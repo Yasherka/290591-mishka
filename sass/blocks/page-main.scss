@@ -1,0 +1,11 @@
+.page-main__title {
+  @include main-title;
+
+  display: block;
+  margin-bottom: 30px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  text-align: center;
+  background-color: $light-grey;
+}

@@ -1,0 +1,19 @@
+.product {
+  margin-bottom: 30px;
+
+  box-shadow: $block-shadow;
+}
+
+.product__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.product__info {
+  box-shadow: $block-shadow;
+}
+
+.product__price {
+  font-weight: 700;
+}
