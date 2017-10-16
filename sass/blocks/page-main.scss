@@ -9,3 +9,14 @@
   text-align: center;
   background-color: $light-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    margin-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
