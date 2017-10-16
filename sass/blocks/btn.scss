@@ -1,9 +1,9 @@
 .btn {
   display: block;
-  padding: 17px;
+  padding: 16px;
 
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
   font-weight: 700;
   color: $grey;
 
@@ -14,4 +14,17 @@
 
   background-color: #ffffff;
   border: 2px solid $grey;
+}
+
+.btn--review,
+.btn--contacts {
+  width: 100%;
+}
+
+
+@media (min-width: $tablet-width) {
+  .btn--review {
+    width: 175px;
+    order: -1;
+  }
 }

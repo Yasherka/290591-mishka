@@ -1,24 +1,119 @@
 .promo {
   margin-bottom: 35px;
   padding-top: 33px;
+  padding-bottom: 50px;
+}
+
+.promo__title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 55px;
 }
 
 .promo__title {
-  margin-bottom: 8px;
-
   @include block-title;
+
+  margin-bottom: 8px;
+  width: 100%;
 }
 
 .promo__name {
   font-size: 17px;
+  line-height: 17px;
   font-weight: 700;
   color: $green;
 
   text-transform: uppercase;
 }
 
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.promo__column {
+  width: 100%;
+}
+
+.promo__info {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+}
+
+.promo__properties {
+  margin-bottom: 30px;
+}
+
 .promo__price {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__title-wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .promo__title {
+    width: 450px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__name {
+    width: 75px;
+
+    text-align: center;
+  }
+
+  .promo__column {
+    width: 291px;
+  }
+
+  .promo__image {
+    width: 50%;
+    height: 405px;
+  }
+
+  .promo__column--price {
+    margin-top: -115px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__title-wrapper {
+    flex-direction: row-reverse;
+
+    margin-top: 65px;
+    width: 700px;
+  }
+
+  .promo__title {
+    width: 530px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo__column {
+    margin-left: 175px;
+  }
+
+  .promo__name {
+    margin: 0 auto;
+  }
+
+  .promo__image {
+    margin-top: -165px;
+    height: 637px;
+
+    z-index: -1;
+  }
 }

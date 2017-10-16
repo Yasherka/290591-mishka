@@ -1,0 +1,35 @@
+@media (min-width: $tablet-width) {
+  .site-nav {
+    order: 3;
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 70px;
+
+    font-size: 15px;
+  }
+
+  .site-nav__item {
+    margin-right: 15px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-nav {
+    order: 2;
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 0;
+
+    font-size: 17px;
+  }
+
+  .site-nav__item {
+    margin-right: 15px;
+    padding: 10px;
+  }
+}
