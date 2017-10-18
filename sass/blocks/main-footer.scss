@@ -1,3 +1,15 @@
 .main-footer {
   background-color: $light-grey;
 }
+
+.main-footer__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    justify-content: space-between;
+  }
+}

@@ -1,3 +1,14 @@
 .catalog__list {
   @include list-reset;
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    border: 1px solid #ececec;
+  }
+}

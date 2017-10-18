@@ -1,4 +1,6 @@
 .main-nav {
+  margin: 0 auto;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -7,4 +9,36 @@
 
 .main-nav__list {
   @include list-reset;
+}
+
+.main-nav__burger {
+  width: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    width: auto;
+  }
+
+  .main-nav__burger {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    width: auto;
+  }
+
+  .main-nav__burger {
+    display: none;
+  }
 }
