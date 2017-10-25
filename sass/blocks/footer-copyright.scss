@@ -1,20 +1,40 @@
-.footer-copyright {
+.footer-copyright__academy {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 20px;
 }
 
 .footer-copyright__info {
   margin: 0;
+  margin-right: 25px;
   padding: 0;
 
   font-size: 19px;
-  line-height: 18px;
+  line-height: 19px;
   font-weight: 700;
+
+  color: #000000;
+}
+
+.footer-copyright__svg {
+  fill: $green;
+}
+
+.footer-copyright__academy:hover .footer-copyright__svg,
+.footer-copyright__academy:focus .footer-copyright__svg {
+  fill: $dark-green;
+}
+
+.footer-copyright__academy:active .footer-copyright__svg,
+.footer-copyright__academy:active .footer-copyright__info {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .footer-copyright {
+    margin-top: -8px;
     width: 200px;
   }
 }

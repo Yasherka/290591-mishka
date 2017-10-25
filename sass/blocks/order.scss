@@ -5,11 +5,14 @@
 .order__info {
   margin: 0;
   margin-bottom: 60px;
-  width: 668px;
+  width: 260px;
+
 }
 
 @media (min-width: $tablet-width) {
   .order__info {
+    width: 668px;
+
     font-size: 17px;
     line-height: 30px;
   }

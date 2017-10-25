@@ -1,17 +1,19 @@
 .categories {
   margin: 0 auto;
-  padding-top: 75px;
+  margin-bottom: 27px;
+  padding-top: 68px;
 
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% -15px;
+  background-position: 50% -19px;
+  background-color: #f9f9f9;
 }
 
 .categories__title {
   @include main-title;
 
   margin: 0 auto;
-  margin-bottom: 120px;
+  margin-bottom: 124px;
   width: 250px;
 
   text-align: center;
@@ -20,11 +22,11 @@
 .categories__list {
   @include list-reset;
 
-  margin: 0 auto;
-  width: 320px;
-
   display: flex;
   flex-wrap: wrap;
+
+  margin: 0 auto;
+  width: 320px;
 }
 
 .categories__item {
@@ -43,25 +45,68 @@
   }
 }
 
+.categories__item:hover,
+.categories__item:focus {
+  background-color: #59d5bc;
+}
+
+.categories__item--dark:hover,
+.categories__item--dark:focus {
+  background-color: #46c1ae;
+}
+
+.categories__item:hover .categories__svg,
+.categories__item:focus .categories__svg{
+  fill: rgba(20, 144, 148, 0.7);
+}
+
+.categories__item:active .categories__svg{
+  fill: rgba(20, 144, 148, 0.3);
+}
+
+.categories__item:active .categories__name{
+  opacity: 0.3;
+}
+
 .categories__link {
+  position: relative;
   display: block;
 
   margin: 0;
-  padding: 30px;
-  padding-right: 185px;
+  padding: 0;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 15px;
 
-  box-sizing: border-box;
   color: #ffffff;
+  box-sizing: border-box;
+}
+
+.categories__name {
+  display: inline-block;
+
+  margin-right: 92px;
+  width: 105px;
+
+  vertical-align: top;
+}
+
+.categories__svg {
+  margin-top: -2px;
+
+  fill: rgba(20, 144, 148, 0.5);
 }
 
 @media (min-width: $tablet-width) {
   .categories {
-    padding-top: 165px;
+    margin-bottom: 55px;
+    padding-top: 152px;
 
-    background-size: 668px auto;
+    background-size: 1050px auto;
   }
 
   .categories__title {
+    margin-bottom: 375px;
     width: 500px;
 
     font-size: 43px;
@@ -74,18 +119,40 @@
 
   .categories__item {
     width: 50%;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .categories__link {
+    padding-left: 37px;
+    padding-top: 30px;
+    padding-bottom: 12px;
+
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+
+  .categories__name {
+    margin-right: 85px;
+    width: 120px;
+  }
+
+  .categories__svg {
+    margin-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .categories {
-    padding-top: 165px;
+    margin-bottom: 130px;
+    padding-top: 152px;
 
-    background-size: 1050px auto;
+    background-size: cover;
   }
 
   .categories__title {
-    margin-bottom: 355px;
+    margin-bottom: 360px;
     width: 650px;
 
     font-size: 53px;
@@ -96,7 +163,7 @@
     width: 1050px;
   }
 
-  .categories__item {
-    width: 50%;
+  .categories__name {
+    margin-right: 275px;
   }
 }

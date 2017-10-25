@@ -1,12 +1,11 @@
 .about {
-  margin-bottom: 60px;
-  padding-top: 35px;
+  margin-bottom: 55px;
 }
 
 .about__title {
   @include block-title;
 
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .about__list {
@@ -17,8 +16,10 @@
 }
 
 .about__item {
-  margin-bottom: 30px;
-  padding-top: 60px;
+  position: relative;
+
+  margin-bottom: 27px;
+  padding-top: 58px;
 
   font-size: 17px;
   line-height: 20px;
@@ -29,20 +30,75 @@
   margin-bottom: 0;
 }
 
+.about__item::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -5px;
+
+  width: 58px;
+  height: 30px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.about__item--flower::before {
+  height: 38px;
+  background-image: url("../../img/icon-feature-flower.svg");
+}
+
+.about__item--money::before {
+  background-image: url("../../img/icon-feature-money.svg");
+}
+
+.about__item--heart::before {
+  background-image: url("../../img/icon-feature-heart.svg");
+}
+
+.about__item--ball::before {
+  height: 35px;
+  background-image: url("../../img/icon-feature-ball.svg");
+}
+
+.about__item--rocket::before {
+  background-image: url("../../img/icon-feature-rocket.svg");
+}
+
+.about__item--gift::before {
+  background-image: url("../../img/icon-feature-gift.svg");
+}
+
 @media (min-width: $tablet-width) {
+  .about {
+    margin-bottom: 28px;
+  }
+
   .about__title {
+    margin-bottom: 45px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   .about__item {
+    margin-bottom: 55px;
     padding-right: 37px;
     width: 50%;
+
+    font-size: 20px;
+    line-height: 22px;
+
     box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .about {
+    margin-bottom: 33px;
+  }
+
   .about__title {
     margin-left: 175px;
 
