@@ -116,12 +116,12 @@
   .promo__image {
     margin-top: 8px;
 
-    width: 50%;
     height: 405px;
+    width: auto;
   }
 
   .promo__column--price {
-    margin-top: -135px;
+    margin-top: -143px;
   }
 
   .promo__price {
@@ -165,10 +165,12 @@
     margin: 0 auto;
   }
 
+  .promo__image-wrapper {
+    z-index: -1;
+  }
+
   .promo__image {
     margin-top: -160px;
     height: 637px;
-
-    z-index: -1;
   }
 }
