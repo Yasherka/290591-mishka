@@ -45,8 +45,7 @@
   background-size: cover;
   background-color: $light-grey;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/video-mobile@2x.jpg");
   }
 }
@@ -100,8 +99,7 @@
 
     order: -1;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/video-tablet@2x.jpg");
     }
   }
@@ -138,8 +136,7 @@
 
     background-image: url("../../img/video-desktop@1x.jpg");
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/video-desktop@2x.jpg");
     }
   }
