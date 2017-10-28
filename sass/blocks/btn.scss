@@ -17,14 +17,32 @@
 }
 
 .btn--review,
-.btn--contacts {
+.btn--contacts,
+.btn--form {
   width: 100%;
+}
+
+
+.btn:hover,
+.btn:focus {
+  background-color: $grey;
+  color: #ffffff;
+}
+
+.btn:active {
+  background-color: $grey;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
 @media (min-width: $tablet-width) {
   .btn--review {
-    width: 175px;
+    margin-top: -15px;
+    width: 140px;
     order: -1;
+  }
+
+  .btn--form {
+    width: 230px;
   }
 }

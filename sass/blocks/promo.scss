@@ -1,20 +1,18 @@
 .promo {
-  margin-bottom: 35px;
-  padding-top: 33px;
-  padding-bottom: 50px;
+  margin-bottom: 43px;
 }
 
 .promo__title-wrapper {
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 55px;
+  margin-bottom: 26px;
 }
 
 .promo__title {
   @include block-title;
 
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   width: 100%;
 }
 
@@ -34,20 +32,39 @@
 }
 
 .promo__column {
+  margin-bottom: 27px;
+  width: 100%;
+}
+
+.promo__properties {
   width: 100%;
 }
 
 .promo__info {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
   padding: 0;
 }
 
-.promo__properties {
-  margin-bottom: 30px;
+.promo__item {
+  padding-top: 6px;
+  padding-bottom: 8px;
+
+  border-bottom: 1px solid $light-grey;
+}
+
+.promo__item:last-of-type {
+  padding-left: 16px;
+}
+
+.promo__image {
+  margin-bottom: 24px;
 }
 
 .promo__price {
+  margin: 0;
+  margin-bottom: 26px;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -56,19 +73,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    margin-bottom: 88px;
+  }
+
   .promo__title-wrapper {
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 45px;
   }
 
   .promo__title {
     width: 450px;
 
     font-size: 43px;
-    line-height: 50px;
+    line-height: 45px;
   }
 
   .promo__name {
+    margin-right: 25px;
     width: 75px;
 
     text-align: center;
@@ -78,17 +102,40 @@
     width: 291px;
   }
 
+  .promo__info {
+    margin-bottom: 38px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__item:last-of-type {
+    padding-left: 0;
+  }
+
   .promo__image {
+    margin-top: 8px;
+
     width: 50%;
     height: 405px;
   }
 
   .promo__column--price {
-    margin-top: -115px;
+    margin-top: -135px;
+  }
+
+  .promo__price {
+    margin-bottom: 35px;
+
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    margin-bottom: 125px;
+  }
+
   .promo__title-wrapper {
     flex-direction: row-reverse;
 
@@ -106,12 +153,20 @@
     margin-left: 175px;
   }
 
+  .promo__info {
+    margin-bottom: 48px;
+  }
+
+  .promo__item {
+    padding-bottom: 10px;
+  }
+
   .promo__name {
     margin: 0 auto;
   }
 
   .promo__image {
-    margin-top: -165px;
+    margin-top: -160px;
     height: 637px;
 
     z-index: -1;

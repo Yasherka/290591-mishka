@@ -4,10 +4,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 12px;
+  padding-bottom: 20px;
+  box-shadow: $block-shadow;
+}
+
+.footer-social__item {
+  margin-right: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.footer-social__svg:hover,
+.footer-social__svg:focus {
+  fill: $dark-green;
+}
+
+.footer-social__svg:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .footer-social {
     width: 200px;
+    box-shadow: none;
   }
 }

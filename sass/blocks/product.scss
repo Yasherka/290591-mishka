@@ -1,38 +1,93 @@
 .product {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
-  box-shadow: $block-shadow;
+  border: 1px solid #ececec;
+}
+
+.product:hover,
+.product:focus {
+  box-shadow: 0 6px 10px 0 #ececec;
+}
+
+.product:active {
+  box-shadow: 0 3px 5px 0 #ececec;
 }
 
 .product__wrapper {
-  margin-top: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 205px;
 }
 
 .product__title {
   margin: 0;
+  margin-bottom: 10px;
 
   font-size: 17px;
   font-weight: 700;
   color: #000000;
 }
 
-.product__info {
-  font-size: 13px;
+.product:hover .product__title,
+.product:focus .product__title {
+  opacity: 0.6;
+}
 
-  box-shadow: $block-shadow;
+.product:active .product__title {
+  opacity: 0.3;
+}
+
+.product__info {
+  margin: 0;
+  margin-bottom: 17px;
+  padding-bottom: 5px;
+  font-size: 13px;
 }
 
 .product__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 25px;
   font-weight: 700;
+
+  border-top: 1px solid $light-grey;
+}
+
+.product__svg {
+  opacity: 0.2;
+}
+
+.product:hover .product__svg,
+.product:focus .product__svg {
+  fill: $dark-green;
+  opacity: 1;
+}
+
+.product:active .product__svg {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .product {
     display: flex;
+
+    margin-bottom: 45px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
   }
 
   .product__wrapper {
-    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 25px;
+    width: 270px;
   }
 
   .product__img {
@@ -45,11 +100,12 @@
   }
 
   .product__info {
-    min-height: 200px;
     font-size: 15px;
   }
 
   .product__price {
+    margin-top: auto;
+    padding-bottom: 35px;
     font-size: 17px;
   }
 }
@@ -58,13 +114,14 @@
   .product {
     flex-direction: column;
 
-    box-shadow: none;
-  }
+    margin-bottom: 0;
+    padding-bottom: 0;
 
-  .product__wrapper {
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 260px;
+    box-shadow: none;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   .product__img {
@@ -72,7 +129,19 @@
     height: 464px;
   }
 
+  .product__wrapper {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 256px;
+    min-height: 165px;
+  }
+
   .product__info {
     min-height: auto;
+    padding-bottom: 5px;
+  }
+
+  .product__price {
+    padding-bottom: 20px;
   }
 }

@@ -5,7 +5,7 @@
 .review__title {
   @include block-title;
 
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .review__wrapper {
@@ -17,14 +17,57 @@
 
 .review__text {
   margin: 0;
+  margin-bottom: 25px;
+
+  line-height: 30px;
+}
+
+.review__author {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .review__arrow-wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 39px;
+}
+
+.review__arrow {
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 7px;
+  width: 130px;
+
+  cursor: pointer;
+
+  background-color: #ffffff;
+  border: 1px solid $light-grey;
+}
+
+.review__arrow--next {
+  margin-left: -5px;
+}
+
+.review__arrow svg {
+  width: 51px;
+  height: 26px;
+}
+
+.review__arrow:hover,
+.review__arrow:focus {
+  opacity: 0.6;
+}
+
+.review__arrow:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .review {
+    margin-bottom: 15px;
     padding-top: 75px;
     min-height: 457px;
 
@@ -34,7 +77,7 @@
   }
 
   .review__title {
-    margin-bottom: 0;
+    margin-bottom: 20px;
 
     font-size: 43px;
     line-height: 50px;
@@ -44,11 +87,35 @@
 
   .review__text {
     margin-top: 30px;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .review__author {
+    width: 255px;
+  }
+
+  .review__author b {
+    font-size: 18px;
   }
 
   .review__arrow-wrapper {
     margin-bottom: 0;
+    margin-right: 5px;
+    margin-top: -18px;
+  }
+
+  .review__arrow {
+    padding: 0;
+    width: 75px;
+
+    border: none;
+  }
+
+  .review__arrow--next {
+    margin-left: 10px;
   }
 }
 
@@ -56,11 +123,26 @@
   .review {
     margin: 0 auto;
     margin-bottom: 35px;
+    padding-top: 73px;
     width: 1050px;
   }
 
   .review__wrapper {
     margin-left: 175px;
     width: 875px;
+  }
+
+  .review__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .review__text {
+    margin-bottom: 37px;
+    width: 770px;
+  }
+
+  .review__author b {
+    font-size: 17px;
   }
 }
