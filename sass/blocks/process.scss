@@ -38,6 +38,16 @@
 .process__video {
   margin: 0;
   margin-bottom: 21px;
+
+  background-image: url("../../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-color: $light-grey;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/video-mobile@2x.jpg");
+  }
 }
 
 .process__row {
@@ -85,7 +95,13 @@
     width: 668px;
     height: 456px;
 
+    background-image: url("../../img/video-tablet@1x.jpg");
+
     order: -1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/video-tablet@2x.jpg");
+    }
   }
 
   .process__row {
@@ -116,6 +132,13 @@
 
   .process__video {
     margin-bottom: -420px;
+    width: 682px;
+
+    background-image: url("../../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/video-desktop@2x.jpg");
+    }
   }
 
   .process__title {
