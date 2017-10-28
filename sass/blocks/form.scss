@@ -43,7 +43,7 @@
   top: 9px;
   right: 0;
 
-  width: 198px;;
+  width: 198px;
   height: 1px;
 
   background: $green;
@@ -88,7 +88,6 @@
 .form__radio:focus + .form__indicator,
 .form__check:focus + .form__indicator {
   border-color: #663d15;
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -234,8 +233,8 @@
     }
 
     &--small {
-    margin-bottom: 28px;
-    padding-top: 52px;
+      margin-bottom: 28px;
+      padding-top: 52px;
     }
   }
 
@@ -397,7 +396,7 @@
   .form__indicator {
     top: -14px;
     left: 10px;
-    }
+  }
 
   .form__text {
     padding-bottom: 14px;

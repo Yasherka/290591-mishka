@@ -56,15 +56,15 @@
 }
 
 .categories__item:hover .categories__svg,
-.categories__item:focus .categories__svg{
+.categories__item:focus .categories__svg {
   fill: rgba(20, 144, 148, 0.7);
 }
 
-.categories__item:active .categories__svg{
+.categories__item:active .categories__svg {
   fill: rgba(20, 144, 148, 0.3);
 }
 
-.categories__item:active .categories__name{
+.categories__item:active .categories__name {
   opacity: 0.3;
 }
 
