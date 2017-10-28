@@ -2,28 +2,86 @@
   margin-bottom: 60px;
 }
 
+.process__wrapper {
+  margin: 0;
+  padding-top: 23px;
+
+  border: 1px solid #ececec;
+}
+
 .process__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 90px;
+
   font-size: 17px;
   font-weight: 700;
   color: #000000;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 35px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.process__video {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.process__row {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  width: 190px;
+}
+
+.process__info {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 13px;
 }
 
 @media (min-width: $tablet-width) {
+  .process {
+    margin-bottom: 65px;
+  }
+
   .process__wrapper {
     display: flex;
     flex-direction: column;
+
+
+    padding-top: 0;
   }
 
   .process__title {
     margin: 0 auto;
-    margin-bottom: 40px;
-    padding-left: 65px;
+    margin-bottom: 35px;
+    padding-left: 105px;
     width: 586px;
 
     font-size: 20px;
+
+    &::before {
+      top: -5px;
+      left: 40px;
+    }
   }
 
   .process__video {
+    margin-bottom: 37px;
     width: 668px;
     height: 456px;
 
@@ -32,18 +90,27 @@
 
   .process__row {
     margin: 0 auto;
+    padding-bottom: 45px;
     width: 586px;
   }
 
   .process__info {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
+
+    font-size: 15px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .process {
+    margin-bottom: 110px;
+  }
+
   .process__wrapper {
-    min-height: 456px;
+    min-height: 450px;
+
     border: 1px solid #ececec;
   }
 
@@ -54,17 +121,28 @@
   .process__title {
     margin: 0;
     margin-left: auto;
-    margin-right: 110px;
+    margin-right: 140px;
+    margin-bottom: 35px;
+
     padding-left: 0;
-    padding-top: 55px;
+    padding-top: 60px;
+
     width: 150px;
-    height: 105px;
+
+    &::before {
+      top: 5px;
+      left: 2px;
+    }
   }
 
   .process__row {
     margin: 0;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 58px;
     width: 230px;
+  }
+
+  .process__info {
+    margin-bottom: 45px;
   }
 }
