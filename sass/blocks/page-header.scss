@@ -16,6 +16,8 @@
   display: block;
   margin: 17px auto;
   margin-top: 20px;
+
+  z-index: 3;
 }
 
 @media (min-width: $tablet-width) {

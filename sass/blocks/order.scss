@@ -4,13 +4,16 @@
 
 .order__info {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 24px;
   width: 260px;
 
+  font-size: 13px;
+  line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .order__info {
+    margin-bottom: 8px;
     width: 668px;
 
     font-size: 17px;
@@ -20,7 +23,7 @@
 
 @media (min-width: $desktop-width) {
   .order__info {
-    margin-left: 270px;
-    width: 630px;
+    margin-left: 175px;
+    width: 670px;
   }
 }

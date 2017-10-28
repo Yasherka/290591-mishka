@@ -23,6 +23,8 @@
 .user-nav__link:focus svg {
   fill: $dark-green;
   opacity: 1;
+
+  cursor: pointer;
 }
 
 .user-nav__link:active svg {

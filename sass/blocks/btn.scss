@@ -17,7 +17,8 @@
 }
 
 .btn--review,
-.btn--contacts {
+.btn--contacts,
+.btn--form {
   width: 100%;
 }
 
@@ -38,5 +39,9 @@
     margin-top: -15px;
     width: 140px;
     order: -1;
+  }
+
+  .btn--form {
+    width: 230px;
   }
 }
