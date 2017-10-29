@@ -84,10 +84,26 @@
   }
 
   .contacts__title {
+    position: relative;
     margin-bottom: 50px;
 
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -15px;
+      left: 620px;
+
+      width: 47px;
+      height: 80px;
+
+      background-image: url("../../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   .contacts__list {
@@ -142,6 +158,11 @@
 
     font-size: 53px;
     line-height: 57px;
+
+    &::after {
+      top: -5px;
+      left: -110px;
+    }
   }
 
   .contacts__list {

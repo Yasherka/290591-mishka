@@ -1,5 +1,7 @@
 .page-header {
   border-bottom: 1px solid $light-grey;
+
+  z-index: 2;
 }
 
 .page-header__wrapper {
@@ -18,6 +20,8 @@
   margin-top: 20px;
 
   z-index: 3;
+
+  @include link;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,6 +44,11 @@
 
     order: 2;
   }
+
+  .page-header__img {
+    width: 115px;
+    height: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -53,8 +62,16 @@
 
   .page-header__logo {
     margin: 0 auto;
-    margin-top: -60px;
+    margin-top: -80px;
+
+    width: 148px;
+    height: 73px;
 
     order: 2;
+  }
+
+  .page-header__img {
+    width: 148px;
+    height: 73px;
   }
 }
