@@ -91,6 +91,30 @@
     line-height: 22px;
 
     box-sizing: border-box;
+
+    &--flower {
+      order: 0;
+    }
+
+    &--ball {
+      order: 1;
+    }
+
+    &--money {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 3;
+    }
+
+    &--heart {
+      order: 4;
+    }
+
+    &--gift {
+      order: 5;
+    }
   }
 }
 

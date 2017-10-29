@@ -18,10 +18,16 @@
 
 .btn--review,
 .btn--contacts,
-.btn--form {
+.btn--form,
+.btn--green {
   width: 100%;
 }
 
+.btn--green {
+  color: #ffffff;
+  background-color: $green;
+  border: none;
+}
 
 .btn:hover,
 .btn:focus {
@@ -30,10 +36,18 @@
 }
 
 .btn:active {
-  background-color: $grey;
   color: rgba(255, 255, 255, 0.3);
 }
 
+.btn--green:hover,
+.btn--green:focus {
+  background-color: $dark-green;
+  color: #ffffff;
+}
+
+.btn--green:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 @media (min-width: $tablet-width) {
   .btn--review {

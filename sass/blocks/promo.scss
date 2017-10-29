@@ -74,7 +74,11 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    margin-bottom: 88px;
+    margin-bottom: 50px;
+  }
+
+  .promo__wrapper {
+    padding-bottom: 38px;
   }
 
   .promo__title-wrapper {
@@ -102,6 +106,10 @@
     width: 291px;
   }
 
+  .promo__column--price {
+    margin-top: -140px;
+  }
+
   .promo__info {
     margin-bottom: 38px;
 
@@ -120,10 +128,6 @@
     width: auto;
   }
 
-  .promo__column--price {
-    margin-top: -143px;
-  }
-
   .promo__price {
     margin-bottom: 35px;
 
@@ -133,7 +137,11 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    margin-bottom: 125px;
+    margin-bottom: 60px;
+  }
+
+  .promo__wrapper {
+    padding-bottom: 65px;
   }
 
   .promo__title-wrapper {

@@ -50,10 +50,40 @@ input[type="radio"].visually-hidden {
   .container {
     width: 668px;
   }
+
+  .container--line {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: -50px;
+      bottom: 0;
+      width: 770px;
+      height: 16px;
+
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+
+      z-index: 1;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     width: 1050px;
+  }
+
+  .container--line {
+    &::after {
+      left: 0;
+      bottom: 0;
+      width: 1050px;
+      height: 22px;
+    }
   }
 }

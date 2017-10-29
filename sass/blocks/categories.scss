@@ -105,7 +105,7 @@
 
 @media (min-width: $tablet-width) {
   .categories {
-    margin-bottom: 55px;
+    margin-bottom: 45px;
     padding-top: 152px;
 
     background-image: url("../../img/hero-tablet@1x.jpg");
@@ -127,7 +127,26 @@
   }
 
   .categories__list {
+    position: relative;
+
     width: 668px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: -10px;
+      bottom: -10px;
+      width: 768px;
+      height: 34px;
+
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center bottom;
+
+      z-index: 1;
+    }
   }
 
   .categories__item {
@@ -140,7 +159,7 @@
   .categories__link {
     padding-left: 37px;
     padding-top: 30px;
-    padding-bottom: 12px;
+    padding-bottom: 20px;
 
     color: #ffffff;
     box-sizing: border-box;
@@ -158,10 +177,11 @@
 
 @media (min-width: $desktop-width) {
   .categories {
-    margin-bottom: 130px;
+    margin-bottom: 122px;
     padding-top: 152px;
 
     background-image: url("../../img/hero-desktop@1x.jpg");
+    background-position: 50% -45px;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -180,6 +200,13 @@
 
   .categories__list {
     width: 1050px;
+
+    &::after {
+      left: -50px;
+      bottom: -12px;
+      width: 1150px;
+      height: 36px;
+    }
   }
 
   .categories__name {
