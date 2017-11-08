@@ -124,14 +124,21 @@
   }
 
   .about__title {
-    margin-left: 175px;
+    margin-left: 172px;
 
     font-size: 53px;
     line-height: 57px;
   }
 
   .about__list {
+    justify-content: space-between;
+
     margin-left: 175px;
     width: 668px;
+  }
+
+  .about__item {
+    padding-right: 0;
+    width: 318px;
   }
 }

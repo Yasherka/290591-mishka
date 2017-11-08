@@ -21,7 +21,9 @@
 
   z-index: 3;
 
-  @include link;
+  &--active {
+    @include link;
+  }
 }
 
 @media (min-width: $tablet-width) {

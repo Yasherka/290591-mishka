@@ -67,7 +67,7 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-top: 78px;
     min-height: 457px;
 
@@ -75,24 +75,24 @@
     background-size: 350px auto;
     background-repeat: no-repeat;
     background-position: left top;
-  }
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .review {
-      background-image: url("../../img/review@2x.jpg");
-      background-size: 700px auto;
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        background-image: url("../../img/review@2x.jpg");
+        background-size: 700px auto;
     }
   }
 
   .review__wrapper {
     position: relative;
+    padding-bottom: 100px;
 
     &::after {
       content: "";
 
       position: absolute;
       left: -50px;
-      bottom: -100px;
+      bottom: 0;
       width: 770px;
       height: 16px;
 
@@ -151,18 +151,18 @@
 @media (min-width: $desktop-width) {
   .review {
     margin: 0 auto;
-    margin-bottom: 35px;
-    padding-top: 70px;
+    margin-bottom: 22px;
+    padding-top: 72px;
     width: 1050px;
   }
 
   .review__wrapper {
     margin-left: 175px;
+    padding-bottom: 150px;
     width: 875px;
 
     &::after {
       left: -170px;
-      bottom: -150px;
       width: 1050px;
       height: 22px;
     }
@@ -180,5 +180,9 @@
 
   .review__author b {
     font-size: 17px;
+  }
+
+  .review__arrow-wrapper {
+    margin-top: -22px;
   }
 }

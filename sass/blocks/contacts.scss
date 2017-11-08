@@ -52,12 +52,21 @@
 .contacts__mailto {
   color: #000000;
 
-  @include link;
+  border-bottom: solid 1px $green;
+}
+
+.contacts__mailto:hover,
+.contacts__mailto:focus {
+  color: $dark-green;
+}
+
+.contacts__mailto:active {
+  opacity: 0.3;
 }
 
 .contacts__map {
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   text-align: center;
 }
@@ -137,14 +146,14 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     width: 1050px;
     align-items: flex-start;
   }
 
   .contacts__wrapper {
     width: 350px;
-    margin-left: 175px;
+    margin-left: 172px;
   }
 
   .contacts__wrapper--btn {
@@ -160,8 +169,8 @@
     line-height: 57px;
 
     &::after {
-      top: -5px;
-      left: -110px;
+      top: -8px;
+      left: -108px;
     }
   }
 

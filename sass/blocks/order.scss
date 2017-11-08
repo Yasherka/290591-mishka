@@ -12,6 +12,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order {
+    margin-bottom: 48px;
+  }
+
   .order__info {
     margin-bottom: 8px;
     width: 668px;

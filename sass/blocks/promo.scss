@@ -57,8 +57,8 @@
   padding-left: 16px;
 }
 
-.promo__image {
-  margin-bottom: 24px;
+.promo__image-wrapper {
+  margin-bottom: 16px;
 }
 
 .promo__price {
@@ -74,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .promo__wrapper {
@@ -107,7 +107,12 @@
   }
 
   .promo__column--price {
-    margin-top: -140px;
+    margin-top: 0;
+  }
+
+  .promo__image-wrapper {
+
+      margin-bottom: -117px;
   }
 
   .promo__info {

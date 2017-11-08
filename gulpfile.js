@@ -7,6 +7,8 @@ var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var autoprefixer = require("autoprefixer");
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -29,6 +31,14 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"));
 });
 
+gulp.task("jsmin", function () {
+  gulp.src("js/picturefill.js")
+    .pipe(plumber())
+    .pipe(concat('picturefill.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("images", function () {
   return gulp.src("img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -42,7 +52,7 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
@@ -91,5 +101,5 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "sprite", "html", done);
+  run("clean", "copy", "style", "jsmin", "sprite", "webp", "html", done);
 });

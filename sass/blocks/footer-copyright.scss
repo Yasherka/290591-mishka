@@ -1,12 +1,14 @@
 .footer-copyright__academy {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   margin-bottom: 20px;
 }
 
 .footer-copyright__info {
+  @include link;
+
   margin: 0;
   margin-right: 25px;
   padding: 0;
@@ -34,7 +36,16 @@
 
 @media (min-width: $tablet-width) {
   .footer-copyright {
-    margin-top: -8px;
+    margin-top: 0;
     width: 200px;
+  }
+
+  .footer-copyright__info {
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  .footer-copyright__academy {
+    margin-bottom: 0;
   }
 }
